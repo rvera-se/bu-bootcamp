@@ -1,6 +1,7 @@
-# Bootcamp Notes 
- 
-## Module 1
-- Set up Java and VS Code
-- Learned the compile-run cycle
-- First Java program: Hello World
+# Module 4 Notes
+I learned how to use GitBash and GitHub to:
+-Create repositories
+-Add, commit, and push files and updates
+-Create branches
+-Merge branches with main
+-Submit pull requests
