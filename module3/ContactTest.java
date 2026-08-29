@@ -1,4 +1,3 @@
-package module5;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*; 
 import org.junit.jupiter.api.BeforeEach;
@@ -15,6 +14,13 @@ public class ContactTest {
   @Test
   void getName_returnsCorrectName() {
     assertEquals("Ada Lovelace", contact.getName());
+  }
+
+  @Test
+  void getName_isIndependent_forEachContactObject() {
+    Contact secondContact = new Contact("Ada Lovelace", "+1 444 444 4444");
+    contact = new Contact("Fredd Merc", "+1 234 567 8910");
+    assertEquals("Ada Lovelace", secondContact.getName());
   } 
  
   @Test

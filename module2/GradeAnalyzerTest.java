@@ -9,6 +9,12 @@ public class GradeAnalyzerTest {
     void calculateAverage_returnsZero_whenListIsEmpty() { 
         ArrayList<Integer> scores = new ArrayList<>(); 
         assertEquals(0.0, GradeAnalyzer.calculateAverage(scores)); 
+    }
+
+    @Test
+    void calculateAverage_returnsCorrectAverage_forNegativeScores() { 
+        ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(50, -10, 80)); 
+        assertEquals(40.0, GradeAnalyzer.calculateAverage(scores));
     } 
  
     @Test
